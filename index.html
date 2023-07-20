@@ -13,41 +13,30 @@
     <nav>
       <section>
         <div>
-          <p>Rooms:</p> <input min="0" class="form-control w-50 m-auto" type="number">
+          <p>Rooms:</p> <input id="rooms" min="0" class="form-control w-50 m-auto" type="number">
         </div>
         <div>
           <span>Squared metres</span>
           <div class="d-flex">
             <div class="me-4">
-              <p>min: </p><input min="0" class="form-control " type="number">
+              <p>min: </p><input id="surf-min" min="0" class="form-control " type="number">
             </div>
             <div>
               <p>max:</p>
-              <input min="0" class="form-control " type="number">
+              <input id="surf-max" min="0" class="form-control " type="number">
             </div>
           </div>
         </div>
       </section>
-      <button class="btn btn-warning">Search</button>
+      <div class='buttons'>
+        <button id="filter-btn" class="btn btn-warning">Search</button>
+        <button id="reset-btn" class="btn btn-warning">Reset</button>
+      </div>
     </nav>
     <section id="Properties">
-      <h4 class="py-3">Total: <span>0</span></h4>
-      <div class="properties">
-        <div class="propiedad">
-          <div class="img"
-            style="background-image: url('https://resizer.glanacion.com/resizer/fhK-tSVag_8UGJjPMgWrspslPoU=/768x0/filters:quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/CUXVMXQE4JD5XIXX4X3PDZAVMY.jpg')">
-          </div>
-          <section>
-            <h5>Mansion</h5>
-            <div class="d-flex justify-content-between">
-              <p>Rooms: 2</p>
-              <p>Surface: 170 m</p>
-            </div>
-            <p class="my-3">Luxury Mansion</p>
-            <button class="btn btn-info ">See more</button>
-          </section>
-        </div>
-      </div>
+      <h4 class="py-3">Total: <span id='total-properties'>0</span></h4>
+      <div class="properties"></div>
+      <script src="assets/js/index.js"></script>
     </section>
   </body>
 </html>
